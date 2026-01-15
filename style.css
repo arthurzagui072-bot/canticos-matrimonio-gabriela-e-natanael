@@ -1,0 +1,128 @@
+.titulo-principal {
+    text-align: center;
+    margin: 60px 20px 40px;
+}
+
+.titulo-principal h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    color: #3b2f2f;
+    margin-bottom: 10px;
+}
+
+.titulo-principal h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 56px;
+    color: #6b3b2a;
+    font-weight: normal;
+}
+
+body {
+    margin: 0;
+    background-color: #f7f1e6;
+    font-family: Georgia, serif;
+    text-align: center;
+    color: #3b2f2f;
+}
+
+header {
+    padding: 80px 20px;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 20px;
+    font-style: italic;
+}
+
+hr {
+    width: 80%;
+    margin: 60px auto;
+    border: none;
+    border-top: 1px solid #c9bfb0;
+}
+
+footer {
+    font-size: 16px;
+    color: #7a6f6f;
+    margin-bottom: 40px;
+}
+
+.acordeao {
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+/* CANTO PRINCIPAL */
+.acordeao > details {
+    background-color: #f5efe4;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.acordeao > details > summary {
+    background-color: #e2d6c3;
+    padding: 16px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+}
+
+/* SUBMENUS (instrumentos) */
+details.sub {
+    margin: 10px 20px;
+    border-radius: 8px;
+    background-color: #ece4d6; /* mistura menu + fundo */
+}
+
+details.sub summary {
+    background-color: #e3d8c6; /* intermediária */
+    padding: 12px 15px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+}
+
+/* remove seta padrão */
+summary::-webkit-details-marker {
+    display: none;
+}
+
+/* setas */
+summary::after {
+    content: "";
+    position: absolute;
+    right: 15px;
+}
+
+details[open] > summary::after {
+    content: "▼";
+}
+
+/* conteúdo */
+.item {
+    padding: 15px;
+}
+
+audio {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.links a {
+    margin-right: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #6b3b2a;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
